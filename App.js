@@ -16,6 +16,7 @@ import Footer from './Footer'
 import Homepage from './Home'
 import NewsDetail from './NewsDetail'
 import About from './About'
+import Quote from './Quote'
 
 const Stack = createStackNavigator()
 
@@ -51,6 +52,13 @@ export default function App() {
           component={About}
           options={{
             header: () => <Header headerDisplay='About Globomantics' />,
+          }}
+        />
+        <Stack.Screen
+          name='Quote'
+          component={Quote}
+          options={{
+            header: () => <Header headerDisplay='Get a quote' />,
           }}
         />
       </Stack.Navigator>
