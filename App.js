@@ -3,7 +3,12 @@ import React from 'react'
 import { Platform, StatusBar } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
-import { useFonts } from 'expo-font'
+import {
+  useFonts,
+  OpenSans_400Regular,
+  OpenSans_400Regular_Italic,
+  OpenSans_700Bold,
+} from '@expo-google-fonts/open-sans'
 import AppLoading from 'expo-app-loading'
 import { navigationRef } from './RootNavigation'
 import Header from './Header'
@@ -15,7 +20,9 @@ const Stack = createStackNavigator()
 
 export default function App() {
   let [fontsLoaded] = useFonts({
-    OpenSans: require('./assets/fonts/OpenSans-Regular.ttf'),
+    OpenSansRegular: OpenSans_400Regular,
+    OpenSansItalic: OpenSans_400Regular_Italic,
+    OpenSansBold: OpenSans_700Bold,
   })
 
   if (!fontsLoaded) return <AppLoading />

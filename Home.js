@@ -69,15 +69,13 @@ const styles = StyleSheet.create({
   },
   title: {
     paddingBottom: 10,
-    fontFamily: 'OpenSans',
-    fontWeight: 'bold',
+    fontFamily: 'OpenSansBold',
   },
   thumbnail: {
     height: 100,
     width: '98%',
   },
   blurb: {
-    fontFamily: 'OpenSans',
-    fontStyle: 'italic',
+    fontFamily: 'OpenSansItalic',
   },
 })

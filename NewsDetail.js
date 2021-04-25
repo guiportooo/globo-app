@@ -61,12 +61,10 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   buttonText: {
-    fontFamily: 'OpenSans',
-    fontWeight: 'bold',
+    fontFamily: 'OpenSansBold',
   },
   title: {
-    fontFamily: 'OpenSans',
-    fontWeight: 'bold',
+    fontFamily: 'OpenSansBold',
     fontSize: 20,
     padding: 20,
   },
@@ -75,8 +73,7 @@ const styles = StyleSheet.create({
     height: 300,
   },
   blurb: {
-    fontFamily: 'OpenSans',
-    fontStyle: 'italic',
+    fontFamily: 'OpenSansItalic',
     fontSize: 14,
     padding: 20,
   },

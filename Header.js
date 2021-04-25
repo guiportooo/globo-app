@@ -23,6 +23,6 @@ const styles = StyleSheet.create({
     marginTop: getStatusBarHeight(),
   },
   text: {
-    fontFamily: 'OpenSans',
+    fontFamily: 'OpenSansRegular',
   },
 })
