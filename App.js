@@ -15,6 +15,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Homepage from './Home'
 import NewsDetail from './NewsDetail'
+import About from './About'
 
 const Stack = createStackNavigator()
 
@@ -44,6 +45,13 @@ export default function App() {
           name='NewsDetail'
           component={NewsDetail}
           options={{ header: () => <Header headerDisplay='News' /> }}
+        />
+        <Stack.Screen
+          name='About'
+          component={About}
+          options={{
+            header: () => <Header headerDisplay='About Globomantics' />,
+          }}
         />
       </Stack.Navigator>
       <Footer />
