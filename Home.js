@@ -25,7 +25,9 @@ export default function Homepage({ navigation }) {
 
   const storyItem = ({ item }) => {
     return (
-      <TouchableWithoutFeedback>
+      <TouchableWithoutFeedback
+        onPress={() => navigation.navigate('NewsDetail', { url: item.url })}
+      >
         <View style={styles.listings}>
           <Text style={styles.title}>{item.title}</Text>
           <Image style={styles.thumbnail} source={{ uri: item.urlToImage }} />
